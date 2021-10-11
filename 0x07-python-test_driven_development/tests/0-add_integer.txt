@@ -1,0 +1,37 @@
+The ``add_integer`` module
+
+
+Using ``add_integer``
+
+
+This is the test file for task 0 project 0x05
+
+>>> add_integer = __import__('0-add_integer').add_integer
+
+ADD 2 INTEGERS:
+    >>> print(add_integer(1, 2))
+    3
+
+ADD WITH NEGATIVE:
+    >>> print(add_integer(100, -2))
+    98
+
+ADD WITH 1 INPUT:
+    >>> print(add_integer(2))
+    100
+
+ADD WITH 1 FLOAT AND 1 NEGATIVE:
+    >>> print(add_integer(100.3, -2))
+    98
+
+ADD WITH B AS STRING
+    >>> print(add_integer(4, "School"))
+    b must be an integer
+
+ADD WITH EMPTY LIST:
+    >>> print(add_integer(None))
+    a must be an integer
+
+ADD WITH 2 FLOATS:
+    >>> print(add_integer(2.5, 8.5))
+    10
