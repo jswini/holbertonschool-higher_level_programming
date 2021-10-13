@@ -1,17 +1,17 @@
 #!/usr/bin/python3
+"""
+This will define a rectangle object
+"""
+
+
 class Rectangle:
     """
-    This will define a rectangle object
+    This instantiates the rectangle
     """
 
     def __init__(self, width=0, height=0):
-        """
-        This instantiates the rectangle
-        """
         self.__width = width
         self.__height = height
-
-
 
     @property
     def width(self):
