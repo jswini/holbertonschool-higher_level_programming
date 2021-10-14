@@ -1,0 +1,31 @@
+The ``integer_validator`` module
+
+Using ``integer_validator``
+
+This is the test file for task 7 project 0x0A
+
+>>> BaseGeometry = __import__('7-main').main
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+CREATE AND PRINT INTEGER
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("my_int", 12)
+
+CREATE AND PRINT SECOND INTEGER
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("width", 89)
+
+DOES IT THROW TYPE ERROR
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("name", "John")
+TypeError: name must be an integer
+
+DOES IT THROW VALUE ERROR FOR 0
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("age", 0)
+ValueError: age must be greater than 0
+
+DOES IT THROW VALUE ERROR FOR NEGATIVE
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("distance", -4)
+ValueError: distance must be greater than 0
