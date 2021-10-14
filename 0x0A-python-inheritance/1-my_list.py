@@ -15,4 +15,5 @@ class MyList(list):
         """
         This method sorts the list and then prints it
         """
-        return (print(sorted(self)))
+        new_list = sorted(self)
+        return (print(new_list))
