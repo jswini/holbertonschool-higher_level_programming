@@ -6,6 +6,11 @@ This is the test file for task 1 project 0x0A
 
 >>> MyList = __import__('1-my_list').MyList
 
+SORT EMPTY LIST
+    >>> my_list = MyList()
+    >>> my_list.print_sorted()
+    []
+
 CREATE AND PRINT MYLIST
     >>> my_list = MyList()
     >>> my_list.append(1)
