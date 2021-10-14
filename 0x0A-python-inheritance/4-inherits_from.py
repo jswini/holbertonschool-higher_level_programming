@@ -3,6 +3,8 @@
 this module tests if an object is of a type that is a subclass of the
 passed info
 """
+
+
 def inherits_from(obj, a_class):
     """
     we return true or false based on the test
