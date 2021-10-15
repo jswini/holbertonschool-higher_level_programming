@@ -2,6 +2,8 @@
 """
 this module reads from a file and outputs result to the screen
 """
+
+
 def read_file(filename=""):
     """
     open read and print the file
