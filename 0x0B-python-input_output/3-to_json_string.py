@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-import json
 """
 this module outputs a json
 """
 
 
+import json
 def to_json_string(my_obj):
     """
     this does the work
