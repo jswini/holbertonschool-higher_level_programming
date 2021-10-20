@@ -97,3 +97,24 @@ class Rectangle(Base):
         calculates and returns area of rectangle
         """
         return (self.height * self.width)
+
+    def display(self):
+        """
+        displays the rectangle with number signs
+        """
+        pound = "#"
+        rectangle_string = ""
+        for i in range(self.height):
+            for j in range(self.width):
+                rectangle_string += pound
+            if i < self.height - 1:
+                rectangle_string += "\n"
+        print(rectangle_string)
+
+    def __str__(self):
+        """
+        displays the info for the rectangle as a string
+        """
+        display = "[Rectangle] ({}) {}/{} - {}/{}"
+        return (display.format(self.id, self.x, self.y, self.width,
+                               self.height))
