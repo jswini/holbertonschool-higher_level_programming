@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """
+this is the base class, and this will be used for rectangle and square
 """
 
 
