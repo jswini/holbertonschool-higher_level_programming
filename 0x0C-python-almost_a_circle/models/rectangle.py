@@ -104,7 +104,11 @@ class Rectangle(Base):
         """
         pound = "#"
         rectangle_string = ""
+        for i in range(self.y):
+            rectangle_string += "\n"
         for i in range(self.height):
+            for i in range(self.x):
+                rectangle_string += " "
             for j in range(self.width):
                 rectangle_string += pound
             if i < self.height - 1:
@@ -118,3 +122,13 @@ class Rectangle(Base):
         display = "[Rectangle] ({}) {}/{} - {}/{}"
         return (display.format(self.id, self.x, self.y, self.width,
                                self.height))
+
+    def update(self, *args):
+        """
+        updates a rectangle object
+        """
+        dimensions = ['id', 'width', 'height', 'x', 'y']
+        i = 0
+        for arg in args:
+            setattr(self, dimensions[i], args[i])
+            i += 1
