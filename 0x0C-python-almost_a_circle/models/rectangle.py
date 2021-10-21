@@ -123,12 +123,16 @@ class Rectangle(Base):
         return (display.format(self.id, self.x, self.y, self.width,
                                self.height))
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """
         updates a rectangle object
         """
         dimensions = ['id', 'width', 'height', 'x', 'y']
         i = 0
-        for arg in args:
-            setattr(self, dimensions[i], args[i])
-            i += 1
+        if args:
+            for arg in args:
+                setattr(self, dimensions[i], args[i])
+                i += 1
+        if kwargs:
+            for key, arg in kwargs.items():
+                setattr(self, key, arg)
