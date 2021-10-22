@@ -111,7 +111,7 @@ class Rectangle(Base):
                 rectangle_string += " "
             for j in range(self.width):
                 rectangle_string += pound
-            if i < self.height - 1:
+            if i < self.height:
                 rectangle_string += "\n"
         print(rectangle_string)
 
