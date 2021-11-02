@@ -1,2 +1,2 @@
---this script displays databases
+-- this script displays databases
 SHOW DATABASES;
