@@ -1,0 +1,4 @@
+-- This script will create a specific table on an SQL server
+CREATE TABLE IF NOT EXISTS force_name (id INT,
+    name VARCHAR(256) NOT NULL
+)
