@@ -14,4 +14,4 @@ if __name__ == "__main__":
     req = urllib.request.Request(argv[1], data)
     with urllib.request.urlopen(req, data) as response:
         new_response = response.read()
-    print(new_response)
+    print("{}".format(new_response.decode()))
