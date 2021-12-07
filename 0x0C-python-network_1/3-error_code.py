@@ -11,4 +11,4 @@ if __name__ == "__main__":
             new_response = response.read()
         print("{}".format(new_response.decode()))
     except error.HTTPError as err_type:
-        print("Error Code: {}".format(err_type.code))
+        print("Error code: {}".format(err_type.code))
