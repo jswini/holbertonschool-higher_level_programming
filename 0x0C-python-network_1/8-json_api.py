@@ -6,19 +6,17 @@ import requests
 from sys import argv
 
 if __name__ == "__main__":
-    
     if len(argv) > 1:
         search_term = argv[1]
     else:
         search_term = ""
     try:
-        req = requests.post('http://0.0.0.0:5000/search_user', data = {'q': search_term})
+        req = requests.post('http://0.0.0.0:5000/search_user',
+                            data={'q': search_term})
         reqjson = req.json()
         req.raise_for_status()
         print("[{}] {}".format(reqjson["id"], reqjson["name"], end=""))
     except ValueError as jsonerror:
         print("Not a valid JSON")
-    except:
+    except Exception:
         print("No result")
-        pass
-    
