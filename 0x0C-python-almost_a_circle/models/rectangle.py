@@ -104,8 +104,8 @@ class Rectangle(Base):
         """
         pound = "#"
         rectangle_string = ""
-        for i in range(self.y):
-            rectangle_string += "\n"
+        # for i in range(self.y):
+        #     rectangle_string += " \n"
         for i in range(self.height):
             for i in range(self.x):
                 rectangle_string += " "
