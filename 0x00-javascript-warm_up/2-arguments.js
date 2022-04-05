@@ -10,6 +10,8 @@ The above code in this comment are from the node.js reference and included for f
  */
 if (process.argv[2] == null) {
   console.log('No argument');
-} else {
+} else if (process.argv[3] == null) {
   console.log('Argument found');
+} else {
+  console.log('Arguments found')
 }
