@@ -1,0 +1,15 @@
+#!/usr/bin/node
+const Rectangle = require('./4-rectangle');
+
+class Square extends Rectangle {
+  constructor (size) {
+    super(size, size);
+    if ((size <= 0) || (isNaN(size))) {
+    // skipped
+    } else {
+      this.size = size;
+    }
+  }
+}
+
+module.exports = Square;
