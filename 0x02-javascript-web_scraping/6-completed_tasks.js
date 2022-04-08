@@ -6,7 +6,7 @@ request(path, (error, response, body) => {
   if (error) {
     console.error(error);
   } else {
-    const tasksFinished = {}
+    const tasksFinished = {};
     const allUsers = JSON.parse(body);
     for (let i = 0; i < allUsers.length; i++) {
       const userIdent = allUsers[i].userId;
@@ -19,6 +19,6 @@ request(path, (error, response, body) => {
         }
       }
     }
-    console.log (tasksFinished);
+    console.log(tasksFinished);
   }
 });
